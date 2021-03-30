@@ -20,7 +20,7 @@ function wordCounter(text) {
     const wordArray = text.split(" ");
     let numberOfOccurrencesInText = 0;
     wordArray.forEach(function(element) {
-    if (word.toLowerCase() === element.toLowerCase()) {
+    if (element.toLowerCase().includes(word.toLowerCase())) {
       numberOfOccurrencesInText++
     }
     });
